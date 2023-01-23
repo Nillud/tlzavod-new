@@ -59,6 +59,17 @@ input {
   padding: 20px 0;
   background: none;
 }
+@media (max-width: 767px) {
+  .main-header .navbar {
+    padding: 6px 0 12px;
+  }
+  .main-header .navbar img {
+    width: 60px;
+  }
+}
+.main-header .navbar .navbar-toggler-icon {
+  background-image: url("../img/form-icons/menu.svg");
+}
 .main-header .navbar-nav {
   margin: 0 auto;
 }
@@ -91,6 +102,11 @@ input {
   color: #061f2a;
   background-color: #ffffff;
 }
+@media (max-width: 767px) {
+  .main-header .main-header__login {
+    display: none;
+  }
+}
 .site-section {
   padding: 120px 0;
 }
@@ -104,8 +120,18 @@ input {
 .site-section__main-content {
   padding-bottom: 100px;
 }
+@media (max-width: 767px) {
+  .site-section {
+    padding: 60px 0;
+  }
+}
 .section-heading {
   margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .section-heading {
+    margin-bottom: 20px;
+  }
 }
 .background-light {
   background-color: #f8f9fa;
@@ -116,13 +142,28 @@ input {
   background-color: #052c3e;
   color: #ffffff;
 }
+@media (max-width: 767px) {
+  .intro {
+    padding-top: 80px;
+  }
+}
 .intro .intro-section {
   border-radius: 20px;
   padding: 40px;
   background-color: rgba(5, 44, 62, 0.85);
 }
+@media (max-width: 767px) {
+  .intro .intro-section {
+    padding: 16px;
+  }
+}
 .intro .intro-text {
   margin-right: 30px;
+}
+@media (max-width: 1360px) {
+  .intro .intro-text {
+    margin: 0 auto;
+  }
 }
 .intro .intro__main p {
   margin-bottom: 30px;
@@ -136,8 +177,20 @@ input {
   font-weight: bold;
   font-size: 40px;
 }
+@media (max-width: 1360px) {
+  .intro h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+}
 .intro p {
   font-size: 18px;
+}
+@media (max-width: 1360px) {
+  .intro p {
+    text-align: center;
+    font-size: 16px;
+  }
 }
 .intro__address {
   max-width: 500px;
@@ -148,9 +201,27 @@ input {
 .intro__address h2 {
   font-size: 24px;
 }
+@media (max-width: 1360px) {
+  .intro__address h2 {
+    font-size: 20px;
+  }
+}
 .intro__address p {
   font-size: 18px;
   margin-bottom: 0;
+}
+@media (max-width: 1360px) {
+  .intro__address p {
+    text-align: left;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1360px) {
+  .intro__address {
+    max-width: 100%;
+    padding: 16px;
+    margin-bottom: 20px;
+  }
 }
 .form-section p {
   font-size: 24px;
@@ -162,6 +233,11 @@ input {
   padding: 40px;
   border: 2px solid #ffffff;
   border-radius: 16px;
+}
+@media (max-width: 767px) {
+  .form-section form {
+    padding: 16px;
+  }
 }
 .form-section button {
   width: 50%;
@@ -178,6 +254,16 @@ input {
 .form-section button:hover {
   color: #ffffff;
   background-color: #061f2a;
+}
+@media (max-width: 1360px) {
+  .form-section button {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .form-section button {
+    width: 100%;
+  }
 }
 .form-section__label {
   position: relative;
@@ -220,6 +306,16 @@ input {
   transform: rotate(180deg);
   opacity: 1;
 }
+@media (max-width: 1360px) {
+  .carousel-control-prev {
+    left: -40px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-control-prev {
+    left: 0;
+  }
+}
 .carousel-control-next {
   right: -120px;
 }
@@ -227,12 +323,22 @@ input {
   background-image: url("../img/carousel/arrow.svg");
   opacity: 1;
 }
+@media (max-width: 1360px) {
+  .carousel-control-next {
+    right: -40px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-control-next {
+    right: 0;
+  }
+}
 .efficiency ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 48px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1320px) {
   .efficiency ul {
     grid-template-columns: 1fr;
     row-gap: 10px;
@@ -324,6 +430,15 @@ input {
 .main-footer__social ul a {
   fill: #ffffff;
 }
+@media (max-width: 767px) {
+  .main-footer__social {
+    padding: 20px 0;
+  }
+  .main-footer__social ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
 .main-footer a {
   transition: all 0.6s ease-in-out;
 }
@@ -335,6 +450,12 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 20px;
+}
+@media (max-width: 1360px) {
+  .service ul {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }
 .service li {
   padding: 20px;
@@ -468,6 +589,17 @@ input {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1360px) {
+  .feedback br {
+    display: none;
+  }
+  .feedback p {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #061f2a;
+    border-radius: 16px;
+  }
+}
 .feedback__contacts h3 {
   font-weight: bold;
   font-size: 30px;
@@ -493,6 +625,34 @@ input {
   color: #061f2a;
   font-size: 20px;
 }
+@media (max-width: 1360px) {
+  .feedback__contacts ul {
+    flex-direction: column;
+  }
+  .feedback__contacts li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .feedback__contacts h4 {
+    font-size: 24px;
+  }
+  .feedback__contacts a {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback__contacts h4 {
+    font-size: 18px;
+  }
+}
 .feedback__item span {
   display: block;
   width: 36px;
@@ -508,6 +668,20 @@ input {
 .feedback__item--phone span {
   background-image: url("../img/form-icons/phone-black.svg");
 }
+@media (max-width: 1360px) {
+  .feedback__item span {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback__item span {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
 .form {
   padding: 40px;
   border: 2px solid #061f2a;
@@ -521,6 +695,14 @@ input {
   font-weight: bold;
   padding: 10px 28px;
   font-size: 16px;
+}
+@media (max-width: 767px) {
+  .form {
+    padding: 16px;
+  }
+  .form button {
+    width: 100%;
+  }
 }
 .form__field {
   display: flex;
@@ -593,12 +775,22 @@ input {
 .objects ul img:hover {
   transform: scale(1.2);
 }
-@media (max-width: 767px) {
+@media (max-width: 1360px) {
   .objects ul {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .objects ul li {
     margin-bottom: 10px;
+  }
+  .objects ul img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .objects ul img {
+    width: 100px;
+    height: 100px;
   }
 }
 .tlz-modal {
