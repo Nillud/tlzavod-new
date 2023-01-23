@@ -73,7 +73,7 @@
                   <input type="text" name="phone" id="phone" placeholder="Введите телефон" required>
                   <label class="form-section__label form-section__label--email" for="email">Email <span>*</span></label>
                   <input type="email" name="email" id="email" placeholder="Введите email" required>
-                  <button type="submit">Заказать</button>
+                  <button type="submit" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Заказать</button>
                 </form>
               </div>
             </div>
@@ -397,16 +397,16 @@
           <div class="col-md-5 col-sm-12">
             <form class="form" method="post">
               <div class="form__field">
-                <label class="form__title form__title--fio" for="fio">ФИО <span>*</span></label>
-                <input type="text" name="fio" id="fio" required>
+                <label class="form__title form__title--fio" for="name1">ФИО <span>*</span></label>
+                <input type="text" name="name1" id="name1" required>
               </div>
               <div class="form__field">
-                <label class="form__title form__title--email" for="email">Email <span>*</span></label>
-                <input type="email" name="email" id="email" required>
+                <label class="form__title form__title--email" for="email1">Email <span>*</span></label>
+                <input type="email" name="email1" id="email1" required>
               </div>
               <div class="form__field">
-                <label class="form__title form__title--phone" for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone">
+                <label class="form__title form__title--phone" for="phone1">Телефон</label>
+                <input type="tel" name="phone1" id="phone1">
               </div>
               <button type="submit">Оставить заявку</button>
             </form>
@@ -462,6 +462,15 @@
       </div>
     </div>
   </footer>
+
+  <!-- <div class="tlz-modal tlz-modal--active">
+    <div class="tlz-modal__text">
+      <p>Письмо отправлено</p>
+      <img src="img/form-icons/ok.svg" alt="">
+      <p>Письмо не отправлено</p>
+      <img src="img/form-icons/not-ok.svg" alt="">
+    </div>
+  </div> -->
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>

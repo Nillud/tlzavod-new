@@ -45,6 +45,7 @@ input {
   overflow: hidden;
 }
 .main-header {
+  z-index: 1000;
   position: fixed;
   background: linear-gradient(180deg, #052c3e 84.9%, rgba(5, 44, 62, 0) 100%);
 }
@@ -599,5 +600,38 @@ input {
   .objects ul li {
     margin-bottom: 10px;
   }
+}
+.tlz-modal {
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tlz-modal__text {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid #061f2a;
+  background-color: #ffffff;
+}
+.tlz-modal__text p {
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.tlz-modal__text img {
+  width: 100px;
+}
+.tlz-modal--active {
+  display: flex;
+}
+.tlz-modal--closed {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
