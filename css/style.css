@@ -175,7 +175,7 @@ input {
 }
 .intro h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 34px;
 }
 @media (max-width: 1360px) {
   .intro h1 {
@@ -447,33 +447,19 @@ input {
   opacity: 0.6;
 }
 .service ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 20px;
-}
-@media (max-width: 1360px) {
-  .service ul {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-  }
+  display: flex;
+  flex-direction: column;
 }
 .service li {
   padding: 20px;
-  border-radius: 16px;
-  border: 2px solid #061f2a;
+  border: 2px solid #0b163f;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
-.service__row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.service li h3 {
+  font-weight: bold;
 }
-.service__row:not(:last-child) {
-  margin-bottom: 10px;
-}
-.service h3 {
-  margin-bottom: 10px;
-}
-.service p {
+.service li p {
   margin-bottom: 0;
 }
 .stages img {
@@ -722,6 +708,16 @@ input {
   font-size: 16px;
   padding: 6px 16px;
   margin-bottom: 5px;
+}
+.form__field--message {
+  margin-bottom: 20px;
+}
+.form__field--message label {
+  margin-left: 0;
+}
+.form__field--message textarea {
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
 }
 .form__title span {
   color: #ff0000;

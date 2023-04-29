@@ -1,27 +1,59 @@
 <?php
-  $subject = 'Обратная связь tlzavod';
+function sendMail($body)
+{
+    include($_SERVER['DOCUMENT_ROOT'] . '/addons/PHPMailer/PHPMailerAutoload.php');
 
-  $to = "forphp@inbox.ru";
-  $from = trim($_POST['email']);
+    $MAIL_MAILER = 'smtp';
+    $MAIL_HOST = 'smtp.mail.ru';
+    $MAIL_PORT = '465';
+    $MAIL_USERNAME = 'agadullin.linar@mail.ru';
+    $MAIL_PASSWORD = '8rm2KMgWbHw2XJwbv38K';
+    $MAIL_ENCRYPTION = 'ssl';
+    $MAIL_FROM_ADDRESS = 'agadullin.linar@mail.ru';
+    $MAIL_FROM_NAME = 'Tlzavod';
 
-  $fio = htmlspecialchars($_POST['fio']);
-  // $fio = urldecode($fio);
-  // $fio = trim($fio);
+    $mail = new PHPMailer;
+    $mail->CharSet = 'UTF-8';
 
-  $phone = htmlspecialchars($_POST['phone']);
-  $phone = urldecode($phone);
-  $phone = trim($phone);
+    // Настройки SMTP
+    $mail->isSMTP();
+    $mail->SMTPAuth = true;
+    $mail->SMTPDebug = 0;
 
-  $message = "Имя отправителя: $fio\n" .
-             "Телефон: $phone";
+    $mail->Host = $MAIL_HOST;
+    $mail->SMTPSecure = $MAIL_ENCRYPTION;
+    $mail->Port = $MAIL_PORT;
+    $mail->Username = $MAIL_USERNAME;
+    $mail->Password = $MAIL_PASSWORD;
 
-  $headers = "From: $from" . "\r\n" .
-  "Reply-To: $from" . "\r\n" .
-  "X-Mailer: PHP/" . phpversion();
+    $subject = 'Обратная связь Tlzavod';
 
-  if (mail($to, $subject, $message, $headers)) {
-    echo 'Mail sended';
-  } else {
-    echo 'Mail not sended';
-  }
+    // От кого
+    $mail->setFrom($MAIL_FROM_ADDRESS, $MAIL_FROM_NAME);
+
+    // Кому
+    $mail->addAddress('agadullin.linar@mail.ru');
+
+    // Тема письма
+    $mail->Subject = $subject;
+
+    // Тело письма
+    $mail->msgHTML($body);
+
+    //$mail->send();
+    return $mail->send();
+}
+
+$body = "<h1>Обратная связь Tlzavod</h1>";
+
+$mail_status = false;
+
+if (trim(!empty($_POST['name']))) {
+  $body .= "<p><strong>Имя: </strong>" . $_POST['name'] . "</p>" . "<p><strong>Телефон: </strong>" . $_POST['phone'] . "</p>" . "<p><strong>E-mail: </strong>" . $_POST['email'] . "</p>";
+} else if (trim(!empty($_POST['name1']))) {
+  $body .= "<p><strong>Имя: </strong>" . $_POST['name1'] . "</p>" . "<p><strong>Телефон: </strong>" . $_POST['phone1'] . "</p>" . "<p><strong>E-mail: </strong>" . $_POST['email1'] . "</p>" . "<p><strong>Сообщение: </strong>" . $_POST['message1'] . "</p>";
+}
+
+sendMail($body);
+
 ?>
