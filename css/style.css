@@ -457,10 +457,32 @@ input {
   margin-bottom: 20px;
 }
 .service li h3 {
+  font-size: 24px;
   font-weight: bold;
 }
 .service li p {
   margin-bottom: 0;
+}
+.service li a img {
+  transition: all 0.6s ease-in-out;
+}
+.service li a img:hover {
+  transform: scale(1.1);
+}
+.service li img {
+  border: 2px solid #0b163f;
+  border-radius: 10px;
+  max-height: 260px;
+  float: right;
+  margin-right: 20px;
+}
+.service li:nth-child(2n) img {
+  margin-left: 10px;
+  float: left;
+}
+.service li:nth-child(2n) p,
+.service li:nth-child(2n) h3 {
+  text-align: right;
 }
 .stages img {
   border-radius: 20px;
@@ -748,6 +770,7 @@ input {
   background-image: url("../img/form-icons/phone-black.svg");
 }
 .about-company a img {
+  float: right;
   transition: all 0.6s ease-in-out;
 }
 .about-company a img:hover {
