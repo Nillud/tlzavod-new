@@ -31,10 +31,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#about-company">О компании</a>
+                <a class="nav-link" href="#production">Услуги</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#production">Продукция</a>
+                <a class="nav-link" href="#about-company">О компании</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#objects">Объекты</a>
@@ -55,7 +55,7 @@
   <main>
     <!-- Введение -->
 
-    <section class="site-section intro">
+    <section class="site-section intro" id="intro">
       <div class="container">
         <div class="intro-section">
           <div class="row align-items-center justify-content-center">
@@ -74,85 +74,17 @@
               <div class="form-section">
                 <p>Заказать звонок с сайта</p>
                 <form id="form-header" method="post">
-                  <label class="form-section__label form-section__label--name" for="name">Имя <span>*</span></label>
+                  <label class="form-section__label form-section__label--name" for="name">Имя</label>
                   <input type="text" name="name" id="name" placeholder="Введите имя" required>
-                  <label class="form-section__label form-section__label--phone" for="phone">Телефон
-                    <span>*</span></label>
+                  <label class="form-section__label form-section__label--phone" for="phone">Телефон</label>
                   <input type="text" name="phone" id="phone" placeholder="Введите телефон" required>
-                  <label class="form-section__label form-section__label--email" for="email">Email <span>*</span></label>
+                  <label class="form-section__label form-section__label--email" for="email">Email</label>
                   <input type="email" name="email" id="email" placeholder="Введите email" required>
                   <button type="submit" class="btn btn-primary" data-toggle="modal"
                     data-target=".bd-example-modal-sm">Заказать</button>
                 </form>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Эффективность использования -->
-
-    <section class="site-section efficiency">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <div class="section-heading text-center">
-              <h2>Немного статистики</h2>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-12 col-sm-12">
-            <ul class="efficiency__list text-center list-unstyled mb-0">
-              <li class="efficiency__card">
-                <div class="card-header">
-                  <img src="img/on-market.svg" width="80" alt="">
-                  <span>6 лет</span>
-                </div>
-                <p>На рынке</p>
-              </li>
-              <li class="efficiency__card">
-                <div class="card-header">
-                  <img src="img/object.svg" width="80" alt="">
-                  <span>800+</span>
-                </div>
-                <p>Объектов</p>
-              </li>
-              <li class="efficiency__card">
-                <div class="card-header">
-                  <img src="img/clients.svg" width="80" alt="">
-                  <span>80+</span>
-                </div>
-                <p>Клиентов</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- О компании -->
-
-    <section class="site-section about-company background-light" id="about-company">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-md-7 col-sm-12">
-            <div class="section-heading">
-              <h2 class="mb-3">О компании</h2>
-              <p> Тюменский лифтовой завод" основан в 2010 году. Накопив огромный опыт установки лифтов разных
-                производителей и превратив его в конкретные инженерные решения, "Тюменский лифтовой завод" совместно с
-                ОАО "Могилёвлифтмаш" приступила к выпуску собственного лифтового оборудования, используя последние
-                инновации в данной сфере. Основное направление производства - современные пассажирские лифты категорий
-                "эконом", предназначенные для застройки жилых массивов, для замены и модернизации устаревших лифтов,
-                отработавших нормативный срок эксплуатации.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <a href="img/sertificate.jpg">
-              <img src="img/sertificate.jpg" height="350" alt="">
-            </a>
           </div>
         </div>
       </div>
@@ -175,7 +107,7 @@
                 <div class="row align-items-center justify-content-between">
                   <div class="col-6">
                     <h3>Модернизация кабин</h3>
-                    <p>Работа по модернизации кабины лифта от любого производителя</p>
+                    <p>Работа по модернизации кабины лифта от любого производителя.</p>
                   </div>
                   <div class="col-6">
                     <a target="_blank" href="./img/services/1.jpg">
@@ -196,7 +128,7 @@
                   </div>
                   <div class="col-6">
                     <h3>Покраска, изготовление дверей</h3>
-                    <p>Устранение сколов, царапин, следов вандализма. Полная или частичная перекраска поверхностей</p>
+                    <p>Устранение сколов, царапин, следов вандализма. Полная или частичная перекраска поверхностей.</p>
                   </div>
                 </div>
               </li>
@@ -206,7 +138,7 @@
                     <h3>Обрамление</h3>
                     <p>Обрамление лифтового портала — это защитно-декоративная конструкция из стали, которая закрывает
                       щели
-                      между шахтой и дверью лифта</p>
+                      между шахтой и дверью лифта.</p>
                   </div>
                   <div class="col-6">
                     <a target="_blank" href="./img/services/4.jpg">
@@ -225,7 +157,7 @@
                   <div class="col-6">
                     <h3>Заказ и доставка запасных частей</h3>
                     <p>Поставка качественных запасных частей для лифтов по всей России от ведущих мировых и российских
-                      производителей</p>
+                      производителей.</p>
                   </div>
                 </div>
               </li>
@@ -261,7 +193,7 @@
                   <div class="col-7">
                     <h3>Изготовление противопожарных дверей шахт, кабин, люков для машинных отделений, ограждений</h3>
                     <p>Собственное производство противопожарных и металлоизделий на высокотехнологичном оборудовании, с
-                      использованием качественных материалов</p>
+                      использованием качественных материалов.</p>
                   </div>
                   <div class="col-5">
                     <a target="_blank" href="./img/services/8.jpg">
@@ -282,7 +214,7 @@
                   </div>
                   <div class="col-8">
                     <h3>Доставка</h3>
-                    <p>Перевозка продукции до объекта установки. Осуществляется по всей территории РФ</p>
+                    <p>Перевозка продукции до объекта установки. Осуществляется по всей территории РФ.</p>
                   </div>
                 </div>
               </li>
@@ -353,6 +285,71 @@
                 </div>
               </li>
             </ul> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О компании -->
+
+    <section class="site-section about-company background-light" id="about-company">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-7 col-sm-12">
+            <div class="section-heading">
+              <h2 class="mb-3">О компании</h2>
+              <p> Тюменский лифтовой завод" основан в 2010 году. Накопив огромный опыт установки лифтов разных
+                производителей и превратив его в конкретные инженерные решения, "Тюменский лифтовой завод" совместно с
+                ОАО "Могилёвлифтмаш" приступила к выпуску собственного лифтового оборудования, используя последние
+                инновации в данной сфере. Основное направление производства - современные пассажирские лифты категорий
+                "эконом", предназначенные для застройки жилых массивов, для замены и модернизации устаревших лифтов,
+                отработавших нормативный срок эксплуатации.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a href="img/sertificate.jpg">
+              <img src="img/sertificate.jpg" height="350" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section efficiency">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="section-heading text-center">
+              <h2>Немного статистики</h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-sm-12">
+            <ul class="efficiency__list text-center list-unstyled mb-0">
+              <li class="efficiency__card">
+                <div class="card-header">
+                  <img src="img/on-market.svg" width="80" alt="">
+                  <span>6 лет</span>
+                </div>
+                <p>На рынке</p>
+              </li>
+              <li class="efficiency__card">
+                <div class="card-header">
+                  <img src="img/object.svg" width="80" alt="">
+                  <span>800+</span>
+                </div>
+                <p>Объектов</p>
+              </li>
+              <li class="efficiency__card">
+                <div class="card-header">
+                  <img src="img/clients.svg" width="80" alt="">
+                  <span>80+</span>
+                </div>
+                <p>Клиентов</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -459,11 +456,11 @@
           <div class="col-lg-5 col-md-12 col-sm-12">
             <form id="form-with-message" class="form" method="post">
               <div class="form__field">
-                <label class="form__title form__title--fio" for="name1">ФИО <span>*</span></label>
+                <label class="form__title form__title--fio" for="name1">ФИО</label>
                 <input type="text" name="name1" id="name1" required>
               </div>
               <div class="form__field">
-                <label class="form__title form__title--email" for="email1">Email <span>*</span></label>
+                <label class="form__title form__title--email" for="email1">Email</label>
                 <input type="email" name="email1" id="email1" required>
               </div>
               <div class="form__field">
@@ -500,11 +497,12 @@
               <div class="col-12">
                 <ul class="list-unstyled mb-lg-0 justify-content-center">
                   <li>
-                    <a href="#">
+                    <a href="#intro">
+                      <span>Заказать звонок</span>
                       <img src="img/social/mail.svg" width="25" alt="">
                     </a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="#">
                       <img src="img/social/telegram.svg" width="25" alt="">
                     </a>
@@ -523,7 +521,7 @@
                     <a href="#">
                       <img src="img/social/youtube.svg" width="25" alt="">
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>

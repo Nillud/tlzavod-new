@@ -430,6 +430,9 @@ input {
 .main-footer__social ul a {
   fill: #ffffff;
 }
+.main-footer__social a span {
+  margin-right: 10px;
+}
 @media (max-width: 767px) {
   .main-footer__social {
     padding: 20px 0;
