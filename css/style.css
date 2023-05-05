@@ -450,42 +450,46 @@ input {
   opacity: 0.6;
 }
 .service ul {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
 }
-.service li {
+.service ul li {
+  display: flex;
   padding: 20px;
-  border: 2px solid #0b163f;
+  border: 1px solid #0b163f;
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.service li h3 {
+.service ul li h3,
+.service ul li p {
+  text-align: center;
+}
+.service ul li h3 {
   font-size: 24px;
   font-weight: bold;
 }
-.service li p {
-  margin-bottom: 0;
+.service ul li .service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
-.service li a img {
-  transition: all 0.6s ease-in-out;
+.service ul li .service-card .service-card-block {
+  margin-bottom: 20px;
 }
-.service li a img:hover {
-  transform: scale(1.1);
+.service ul li .service-card .service-card-block img {
+  display: block;
+  max-height: 300px;
+  margin: 0 auto;
 }
-.service li img {
-  border: 2px solid #0b163f;
-  border-radius: 10px;
-  max-height: 260px;
-  float: right;
-  margin-right: 20px;
+.service ul li .service-card .service-card-block .carousel {
+  width: 400px;
 }
-.service li:nth-child(2n) img {
-  margin-left: 10px;
-  float: left;
-}
-.service li:nth-child(2n) p,
-.service li:nth-child(2n) h3 {
-  text-align: right;
+.service ul li .service-card .service-card-block .carousel img {
+  max-height: 300px;
+  margin: 0 auto;
 }
 .stages img {
   border-radius: 20px;

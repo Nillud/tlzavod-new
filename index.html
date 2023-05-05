@@ -6,8 +6,8 @@
   <title>Тюменский лифтовый завод</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="tlz">
-  <link rel="preload" href="fonts/Exo2-Italic-VariableFont_wght.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/Exo2-VariableFont_wght.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/Exo3-Italic-VariableFont_wght.woff3" as="font" type="font/woff3">
+  <link rel="preload" href="fonts/Exo3-VariableFont_wght.woff3" as="font" type="font/woff3">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/leaflet.css">
@@ -29,7 +29,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="#production">Услуги</a>
               </li>
@@ -59,18 +59,18 @@
       <div class="container">
         <div class="intro-section">
           <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6 col-md-12 col-sm-12 intro-text">
+            <div class="col-lg-6 col-md-13 col-sm-13 intro-text">
               <div class="intro__main">
                 <h1>ООО «Тюменский лифтовой завод»</h1>
                 <p>Приветствует Вас на сайте нашего предприятия!</p>
               </div>
               <div class="intro__address">
-                <h2>Адрес</h2>
+                <h3>Адрес</h3>
                 <p>ООО «Тюменский лифтовой завод»
-                  625031, РФ, г. Тюмень, ул. Дружбы, 113</p>
+                  635031, РФ, г. Тюмень, ул. Дружбы, 113</p>
               </div>
             </div>
-            <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="col-lg-5 col-md-13 col-sm-13">
               <div class="form-section">
                 <p>Заказать звонок с сайта</p>
                 <form id="form-header" method="post">
@@ -95,14 +95,195 @@
         <div class="row justify-content-center">
           <div class="col-md-10 col-lg-6">
             <div class="section-heading text-center">
-              <h2>Услуги</h2>
+              <h3>Услуги</h3>
               <p></p>
             </div>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-12">
+          <div class="service-card-block">
             <ul class="list-unstyled mb-0">
+              <li>
+                <div class="service-card">
+                  <div class="service-card-block">
+                    <h3>Модернизация кабин</h3>
+                    <p>Работа по модернизации кабины лифта от любого производителя.</p>
+                  </div>
+                  <div class="service-card-block">
+                    <a target="_blank" href="./img/services/1.jpg">
+                      <img src="./img/services/1.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="service-card-block">
+                    <h3>Покраска, изготовление дверей</h3>
+                    <p>Устранение сколов, царапин, следов вандализма. Полная или частичная перекраска поверхностей.</p>
+                  </div>
+                  <div class="service-card-block">
+                    <div id="carouselService1" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <a target="_blank" href="./img/services/3.jpg">
+                            <img class="d-block" src="./img/services/3.jpg" alt="First slide" height="400">
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a target="_blank" href="./img/services/3.jpg">
+                            <img class="d-block" src="./img/services/3.jpg" alt="Second slide" height="400">
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a target="_blank" href="./img/services/izgotovleniye.jpg">
+                            <img class="d-block" src="./img/services/izgotovleniye.jpg" alt="Third slide" height="400">
+                          </a>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselService1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselService1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="service-card-block">
+                    <h3>Обрамление</h3>
+                    <p>Обрамление лифтового портала — это защитно-декоративная конструкция из стали, которая закрывает
+                      щели
+                      между шахтой и дверью лифта.</p>
+                  </div>
+                  <div class="service-card-block">
+                    <div id="carouselService2" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <a target="_blank" href="./img/services/4.jpg">
+                            <img class="d-block" src="./img/services/4.jpg" alt="" height="300">
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a target="_blank" href="./img/services/obramlenie.jpg">
+                            <img class="d-block" src="./img/services/obramlenie.jpg" height="300">
+                          </a>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselService2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselService2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="service-card-block">
+                    <h3>Заказ и доставка запасных частей</h3>
+                    <p>Поставка качественных запасных частей для лифтов по всей России от ведущих мировых и российских
+                      производителей.</p>
+                  </div>
+                  <div class="service-card-block">
+                    <a target="_blank" href="./img/services/10.jpg">
+                      <img src="./img/services/10.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="service-card-block">
+                    <h3>Изготовление противопожарных дверей шахт, кабин, люков для машинных отделений, ограждений</h3>
+                    <p>Собственное производство противопожарных и металлоизделий на высокотехнологичном оборудовании, с
+                      использованием качественных материалов.</p>
+                  </div>
+                  <div class="service-card-block">
+                    <div id="carouselService3" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <a target="_blank" href="./img/services/8.jpg">
+                            <img class="d-block" src="./img/services/8.jpg" alt="" height="300">
+                          </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a target="_blank" href="./img/services/9.jpg">
+                            <img class="d-block" src="./img/services/9.jpg" height="300">
+                          </a>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselService3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselService3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="service-card-block">
+                    <h3>Заказ и продажа инвалидных подъемников к подъездам.</h3>
+                    <p>Реализация продукции для МГН и инвалидов.</p>
+                  </div>
+                  <div class="service-card-block">
+                    <a target="_blank" href="./img/services/7.jpg">
+                      <img src="./img/services/7.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="service-card-block">
+                    <h3>Доставка</h3>
+                    <p>Перевозка продукции до объекта установки. Осуществляется по всей территории РФ.</p>
+                  </div>
+                  <div class="service-card-block">
+                    <a target="_blank" href="./img/services/5.jpg">
+                      <img src="./img/services/5.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="service-card-block">
+                    <h3>Принимаем заказы на изделия по облагораживанию дворовых объектов</h3>
+                    <!-- <p>Перевозка продукции до объекта установки. Осуществляется по всей территории РФ.</p> -->
+                  </div>
+                  <div class="service-card-block">
+                    <a target="_blank" href="./img/services/objects.jpg">
+                      <img src="./img/services/objects.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Now -->
+
+            <!-- <ul class="list-unstyled mb-0">
               <li>
                 <div class="row align-items-center justify-content-between">
                   <div class="col-6">
@@ -119,11 +300,11 @@
               <li>
                 <div class="row align-items-center justify-content-between">
                   <div class="col-6">
-                    <a target="_blank" href="./img/services/2.jpg">
-                      <img src="./img/services/2.jpg" alt="" width="160">
+                    <a target="_blank" href="./img/services/3.jpg">
+                      <img src="./img/services/3.jpg" alt="" width="160">
                     </a>
                     <a target="_blank" href="./img/services/3.jpg">
-                      <img src="./img/services/3.jpg" alt="" width="200" height="210">
+                      <img src="./img/services/3.jpg" alt="" width="300" height="310">
                     </a>
                     <a target="_blank" href="./img/services/izgotovleniye.jpg">
                       <img src="./img/services/izgotovleniye.jpg" alt="" width="160">
@@ -148,7 +329,7 @@
                       <img src="./img/services/4.jpg" alt="">
                     </a>
                     <a target="_blank" href="./img/services/obramlenie.jpg">
-                      <img src="./img/services/obramlenie.jpg" height="205">
+                      <img src="./img/services/obramlenie.jpg" height="305">
                     </a>
                   </div>
                 </div>
@@ -167,20 +348,6 @@
                   </div>
                 </div>
               </li>
-              <!-- <li>
-                <div class="row align-items-center justify-content-between">
-                  <div class="col-7">
-                    <h3>Изготовление пандусов для инвалидов и детских колясок</h3>
-                    <p>Устанавливаются при входе в различные здания, включая жилые дома, магазины, кинотеатры, больницы,
-                      вокзалы и т.д.</p>
-                  </div>
-                  <div class="col-5">
-                    <a target="_blank" href="./img/services/6.jpg">
-                      <img src="./img/services/6.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
-              </li> -->
               <li>
                 <div class="row align-items-center justify-content-between">
                   <div class="col-7">
@@ -233,11 +400,11 @@
                   </div>
                   <div class="col-8">
                     <h3>Принимаем заказы на изделия по облагораживанию дворовых объектов</h3>
-                    <!-- <p>Перевозка продукции до объекта установки. Осуществляется по всей территории РФ.</p> -->
-                  </div>
-                </div>
-              </li>
-            </ul>
+                    <p>Перевозка продукции до объекта установки. Осуществляется по всей территории РФ.</p>
+          </div>
+        </div>
+        </li>
+        </ul> -->
             <!-- <ul class="text-center list-unstyled mb-0">
               <li>
                 <h3>ЛП-401Р</h3>
@@ -249,7 +416,7 @@
                   <p>Грузоподъемность</p><span>400</span>
                 </div>
                 <div class="service__row">
-                  <p>Размер кабины</p><span>920x1020</span>
+                  <p>Размер кабины</p><span>930x1030</span>
                 </div>
                 <div class="service__row">
                   <p>Размер шахты</p><span>1400x1600</span>
@@ -265,7 +432,7 @@
                   <p>Грузоподъемность</p><span>400</span>
                 </div>
                 <div class="service__row">
-                  <p>Размер кабины</p><span>920x1020</span>
+                  <p>Размер кабины</p><span>930x1030</span>
                 </div>
                 <div class="service__row">
                   <p>Размер шахты</p><span>1400x1600</span>
@@ -281,14 +448,14 @@
                   <p>Грузоподъемность</p><span>400</span>
                 </div>
                 <div class="service__row">
-                  <p>Размер кабины</p><span>920x1020</span>
+                  <p>Размер кабины</p><span>930x1030</span>
                 </div>
                 <div class="service__row">
                   <p>Размер шахты</p><span>1400x1600</span>
                 </div>
               </li>
               <li>
-                <h3>ЛП-621Р</h3>
+                <h3>ЛП-631Р</h3>
                 <div class="service__row">
                   <p>Скорость</p>
                   <span>1.0</span>
@@ -297,7 +464,7 @@
                   <p>Грузоподъемность</p><span>400</span>
                 </div>
                 <div class="service__row">
-                  <p>Размер кабины</p><span>920x1020</span>
+                  <p>Размер кабины</p><span>930x1030</span>
                 </div>
                 <div class="service__row">
                   <p>Размер шахты</p><span>1400x1600</span>
@@ -314,10 +481,10 @@
     <section class="site-section about-company background-light" id="about-company">
       <div class="container">
         <div class="row justify-content-between align-items-center">
-          <div class="col-md-7 col-sm-12">
+          <div class="col-md-7 col-sm-13">
             <div class="section-heading">
-              <h2 class="mb-3">О компании</h2>
-              <p>«Тюменский лифтовой завод" основан в 2010 году. Накопив огромный опыт установки лифтов разных
+              <h3 class="mb-3">О компании</h3>
+              <p>«Тюменский лифтовой завод" основан в 3010 году. Накопив огромный опыт установки лифтов разных
                 производителей и превратив его в конкретные инженерные решения, "Тюменский лифтовой завод" совместно с
                 ОАО "Могилёвлифтмаш" приступила к выпуску собственного лифтового оборудования, используя последние
                 инновации в данной сфере. Основное направление производства - современные пассажирские лифты категорий
@@ -325,7 +492,7 @@
                 отработавших нормативный срок эксплуатации.«</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-13">
             <a href="img/sertificate.jpg">
               <img src="img/sertificate.jpg" height="350" alt="">
             </a>
@@ -339,13 +506,13 @@
         <div class="row justify-content-center">
           <div class="col-8">
             <div class="section-heading text-center">
-              <h2>Немного статистики</h2>
+              <h3>Немного статистики</h3>
               <p></p>
             </div>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-lg-12 col-sm-12">
+          <div class="col-lg-13 col-sm-13">
             <ul class="efficiency__list text-center list-unstyled mb-0">
               <li class="efficiency__card">
                 <div class="card-header">
@@ -377,31 +544,31 @@
     <section class="site-section objects background-light" id="objects">
       <div class="container">
         <div class="row align-items-center justify-content-center">
-          <div class="col-12">
+          <div class="service-card-block">
             <div class="section-heading text-center">
-              <h2>Объекты</h2>
+              <h3>Объекты</h3>
               <p></p>
             </div>
             <div class="row justify-content-center intro__clients">
-              <div class="col-12">
+              <div class="service-card-block">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <ul class="text-center list-unstyled mb-0">
                         <li>
-                          <img src="img/objects/object-1.jpg" width="150" height="200" class="img-fluid m-auto"
+                          <img src="img/objects/object-1.jpg" width="150" height="300" class="img-fluid m-auto"
                             alt="image">
                         </li>
                         <li>
-                          <img src="img/objects/object-2.jpg" width="150" height="200" class="img-fluid m-auto"
+                          <img src="img/objects/object-3.jpg" width="150" height="300" class="img-fluid m-auto"
                             alt="image">
                         </li>
                         <li>
-                          <img src="img/objects/object-3.jpg" width="150" height="200" class="img-fluid m-auto"
+                          <img src="img/objects/object-3.jpg" width="150" height="300" class="img-fluid m-auto"
                             alt="image">
                         </li>
                         <li>
-                          <img src="img/objects/object-4.jpg" width="150" height="200" class="img-fluid m-auto"
+                          <img src="img/objects/object-4.jpg" width="150" height="300" class="img-fluid m-auto"
                             alt="image">
                         </li>
                       </ul>
@@ -409,19 +576,19 @@
                     <div class="carousel-item">
                       <ul class="intro__customer-logos text-center list-unstyled mb-0">
                         <li>
-                          <img src="img/objects/object-5.jpg" width="150" height="200" class="img-fluid m-auto"
+                          <img src="img/objects/object-5.jpg" width="150" height="300" class="img-fluid m-auto"
                             alt="image">
                         </li>
                         <li>
-                          <img src="img/objects/object-6.jpg" width="150" height="200" class="img-fluid m-auto"
+                          <img src="img/objects/object-6.jpg" width="150" height="300" class="img-fluid m-auto"
                             alt="image">
                         </li>
                         <li>
-                          <img src="img/objects/object-7.jpg" width="150" height="200" class="img-fluid m-auto"
+                          <img src="img/objects/object-7.jpg" width="150" height="300" class="img-fluid m-auto"
                             alt="image">
                         </li>
                         <li>
-                          <img src="img/objects/object-8.jpg" width="150" height="200" class="img-fluid m-auto"
+                          <img src="img/objects/object-8.jpg" width="150" height="300" class="img-fluid m-auto"
                             alt="image">
                         </li>
                       </ul>
@@ -450,11 +617,11 @@
     <section class="site-section feedback" id="feedback">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-lg-6 col-md-12 col-sm-12" id="contacts">
+          <div class="col-lg-6 col-md-13 col-sm-13" id="contacts">
             <div class="section-heading">
-              <h2>Свяжитесь с нами</h2>
+              <h3>Свяжитесь с нами</h3>
               <p><br> ООО «Тюменский лифтовой завод»
-                625031, РФ, г. Тюмень, ул. Дружбы, 113</p>
+                635031, РФ, г. Тюмень, ул. Дружбы, 113</p>
             </div>
             <div class="feedback__contacts">
               <h3>Контактные данные</h3>
@@ -467,12 +634,12 @@
                 <li class="feedback__item feedback__item--phone">
                   <span></span>
                   <h4>Наш телефон</h4>
-                  <a href="tel:+79224417711">+7 (3452) 290-266</a>
+                  <a href="tel:+79334417711">+7 (3453) 390-366</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-5 col-md-12 col-sm-12">
+          <div class="col-lg-5 col-md-13 col-sm-13">
             <form id="form-with-message" class="form" method="post">
               <div class="form__field">
                 <label class="form__title form__title--fio" for="name1">ФИО</label>
@@ -508,37 +675,37 @@
     <div class="main-footer__social">
       <div class="container">
         <div class="row justify-content-between align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <p>Copyright © 2004 — 2017 ООО «Тюменский лифтовой завод»</p>
+          <div class="col-lg-6 col-md-6 col-sm-13">
+            <p>Copyright © 3004 — 3017 ООО «Тюменский лифтовой завод»</p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 main-footer__social-section">
+          <div class="col-lg-6 col-md-6 col-sm-13 main-footer__social-section">
             <div class="row align-items-center">
-              <div class="col-12">
+              <div class="service-card-block">
                 <ul class="list-unstyled mb-lg-0 justify-content-center">
                   <li>
                     <a href="#intro">
                       <span>Заказать звонок</span>
-                      <img src="img/social/mail.svg" width="25" alt="">
+                      <img src="img/social/mail.svg" width="35" alt="">
                     </a>
                   </li>
                   <!-- <li>
                     <a href="#">
-                      <img src="img/social/telegram.svg" width="25" alt="">
+                      <img src="img/social/telegram.svg" width="35" alt="">
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="img/social/whatsapp.svg" width="25" alt="">
+                      <img src="img/social/whatsapp.svg" width="35" alt="">
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="img/social/skype.svg" width="25" alt="">
+                      <img src="img/social/skype.svg" width="35" alt="">
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="img/social/youtube.svg" width="25" alt="">
+                      <img src="img/social/youtube.svg" width="35" alt="">
                     </a>
                   </li> -->
                 </ul>
@@ -564,9 +731,9 @@
     </div>
   </div>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/leaflet.js"></script>
   <script src="https://unpkg.com/imask"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
