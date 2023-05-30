@@ -76,6 +76,10 @@ input {
 .main-header ul li:not(:last-child) {
   margin-right: 20px;
 }
+.main-header ul li .catalog {
+  font-weight: bold;
+  text-decoration: underline;
+}
 .main-header ul li > a {
   color: #ffffff;
   transition: all 0.6s ease-in-out;

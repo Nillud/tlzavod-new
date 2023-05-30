@@ -2,540 +2,514 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Тюменский лифтовый завод</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="tlz">
-  <link rel="preload" href="fonts/Exo2-Italic-VariableFont_wght.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/Exo2-VariableFont_wght.woff2" as="font" type="font/woff2">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/leaflet.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Тюменский лифтовый завод</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="tlz">
+    <link rel="preload" href="fonts/Exo2-Italic-VariableFont_wght.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/Exo2-VariableFont_wght.woff2" as="font" type="font/woff2">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 
-  <header class="main-header w-100">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg sticky-header">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.svg" width="60" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+    <header class="main-header w-100">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg sticky-header">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.svg" width="60" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#production">Услуги</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about-company">О компании</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#objects">Объекты</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-            <div>
-              <a class="main-header__login" href="#feedback">Отправить сообщение</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- Введение -->
-
-    <section class="site-section intro" id="intro">
-      <div class="container">
-        <div class="intro-section">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6 col-md-12 col-sm-12 intro-text">
-              <div class="intro__main">
-                <h1>ООО «Тюменский лифтовой завод»</h1>
-                <p>Приветствует Вас на сайте нашего предприятия!</p>
-              </div>
-              <div class="intro__address">
-                <h2>Адрес</h2>
-                <p>ООО «Тюменский лифтовой завод»
-                  635031, РФ, г. Тюмень, ул. Дружбы, 113</p>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-12 col-sm-12">
-              <div class="form-section">
-                <p>Заказать звонок с сайта</p>
-                <form id="form-header" method="post">
-                  <label class="form-section__label form-section__label--name" for="name">Имя</label>
-                  <input type="text" name="name" id="name" placeholder="Введите имя" required>
-                  <label class="form-section__label form-section__label--phone" for="phone">Телефон</label>
-                  <input type="text" name="phone" id="phone" placeholder="Введите телефон" required>
-                  <label class="form-section__label form-section__label--email" for="email">Email</label>
-                  <input type="email" name="email" id="email" placeholder="Введите email" required>
-                  <button type="submit" class="btn btn-primary" data-toggle="modal"
-                    data-target=".bd-example-modal-sm">Заказать</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section service" id="production">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-6">
-            <div class="section-heading text-center">
-              <h2>Услуги</h2>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="service-card-block">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <div class="service-card">
-                  <div class="service-card-block">
-                    <h3>Модернизация кабин</h3>
-                    <p>Работа по модернизации кабины лифта от любого производителя.</p>
-                  </div>
-                  <div class="service-card-block">
-                    <a target="_blank" href="./img/services/1.jpg">
-                      <img src="./img/services/1.jpg" alt="">
-                    </a>
-                  </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#production">Услуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-company">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#objects">Объекты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacts">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="img/Tlz-Catalog.pdf"><span class="catalog">Каталог</span></a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a class="main-header__login" href="#feedback">Отправить сообщение</a>
+                        </div>
+                    </div>
                 </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="service-card-block">
-                    <h3>Покраска, изготовление дверей</h3>
-                    <p>Устранение сколов, царапин, следов вандализма. Полная или частичная перекраска поверхностей.</p>
-                  </div>
-                  <div class="service-card-block">
-                    <div id="carouselService1" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <a target="_blank" href="./img/services/3.jpg">
-                            <img class="d-block" src="./img/services/3.jpg" alt="First slide" height="400">
-                          </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Введение -->
+
+        <section class="site-section intro" id="intro">
+            <div class="container">
+                <div class="intro-section">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6 col-md-12 col-sm-12 intro-text">
+                            <div class="intro__main">
+                                <h1>ООО «Тюменский лифтовой завод»</h1>
+                                <p>Приветствует Вас на сайте нашего предприятия!</p>
+                            </div>
+                            <div class="intro__address">
+                                <h2>Адрес</h2>
+                                <p>ООО «Тюменский лифтовой завод» 635031, РФ, г. Тюмень, ул. Дружбы, 113</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                          <a target="_blank" href="./img/services/3.jpg">
-                            <img class="d-block" src="./img/services/3.jpg" alt="Second slide" height="400">
-                          </a>
+                        <div class="col-lg-5 col-md-12 col-sm-12">
+                            <div class="form-section">
+                                <p>Заказать звонок с сайта</p>
+                                <form id="form-header" method="post">
+                                    <label class="form-section__label form-section__label--name" for="name">Имя</label>
+                                    <input type="text" name="name" id="name" placeholder="Введите имя" required>
+                                    <label class="form-section__label form-section__label--phone" for="phone">Телефон</label>
+                                    <input type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+                                    <label class="form-section__label form-section__label--email" for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="Введите email" required>
+                                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Заказать</button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                          <a target="_blank" href="./img/services/izgotovleniye.jpg">
-                            <img class="d-block" src="./img/services/izgotovleniye.jpg" alt="Third slide" height="400">
-                          </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section service" id="production">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-6">
+                        <div class="section-heading text-center">
+                            <h2>Услуги</h2>
+                            <p></p>
                         </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselService1"
-                        data-bs-slide="prev">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="service-card-block">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <div class="service-card">
+                                    <div class="service-card-block">
+                                        <h3>Модернизация кабин</h3>
+                                        <p>Работа по модернизации кабины лифта от любого производителя.</p>
+                                    </div>
+                                    <div class="service-card-block">
+                                        <a target="_blank" href="./img/services/1.jpg">
+                                            <img src="./img/services/1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-card">
+                                    <div class="service-card-block">
+                                        <h3>Покраска, изготовление дверей</h3>
+                                        <p>Устранение сколов, царапин, следов вандализма. Полная или частичная перекраска поверхностей.</p>
+                                    </div>
+                                    <div class="service-card-block">
+                                        <div id="carouselService1" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <a target="_blank" href="./img/services/3.jpg">
+                                                        <img class="d-block" src="./img/services/3.jpg" alt="First slide" height="400">
+                                                    </a>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <a target="_blank" href="./img/services/3.jpg">
+                                                        <img class="d-block" src="./img/services/3.jpg" alt="Second slide" height="400">
+                                                    </a>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <a target="_blank" href="./img/services/izgotovleniye.jpg">
+                                                        <img class="d-block" src="./img/services/izgotovleniye.jpg" alt="Third slide" height="400">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselService1" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselService1"
-                        data-bs-slide="next">
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselService1" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="service-card-block">
-                    <h3>Обрамление</h3>
-                    <p>Обрамление лифтового портала — это защитно-декоративная конструкция из стали, которая закрывает
-                      щели
-                      между шахтой и дверью лифта.</p>
-                  </div>
-                  <div class="service-card-block">
-                    <div id="carouselService2" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <a target="_blank" href="./img/services/4.jpg">
-                            <img class="d-block" src="./img/services/4.jpg" alt="" height="300">
-                          </a>
-                        </div>
-                        <div class="carousel-item">
-                          <a target="_blank" href="./img/services/obramlenie.jpg">
-                            <img class="d-block" src="./img/services/obramlenie.jpg" height="300">
-                          </a>
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselService2"
-                        data-bs-slide="prev">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-card">
+                                    <div class="service-card-block">
+                                        <h3>Обрамление</h3>
+                                        <p>Обрамление лифтового портала — это защитно-декоративная конструкция из стали, которая закрывает щели между шахтой и дверью лифта.</p>
+                                    </div>
+                                    <div class="service-card-block">
+                                        <div id="carouselService2" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <a target="_blank" href="./img/services/4.jpg">
+                                                        <img class="d-block" src="./img/services/4.jpg" alt="" height="300">
+                                                    </a>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <a target="_blank" href="./img/services/obramlenie.jpg">
+                                                        <img class="d-block" src="./img/services/obramlenie.jpg" height="300">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselService2" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselService2"
-                        data-bs-slide="next">
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselService2" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="service-card-block">
-                    <h3>Заказ и доставка запасных частей</h3>
-                    <p>Поставка качественных запасных частей для лифтов по всей России от ведущих мировых и российских
-                      производителей.</p>
-                  </div>
-                  <div class="service-card-block">
-                    <a target="_blank" href="./img/services/10.jpg">
-                      <img src="./img/services/10.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="service-card-block">
-                    <h3>Изготовление противопожарных дверей шахт, кабин, люков для машинных отделений, ограждений</h3>
-                    <p>Собственное производство противопожарных и металлоизделий на высокотехнологичном оборудовании, с
-                      использованием качественных материалов.</p>
-                  </div>
-                  <div class="service-card-block">
-                    <div id="carouselService3" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <a target="_blank" href="./img/services/8.jpg">
-                            <img class="d-block" src="./img/services/8.jpg" alt="" height="300">
-                          </a>
-                        </div>
-                        <div class="carousel-item">
-                          <a target="_blank" href="./img/services/9.jpg">
-                            <img class="d-block" src="./img/services/9.jpg" height="300">
-                          </a>
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselService3"
-                        data-bs-slide="prev">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-card">
+                                    <div class="service-card-block">
+                                        <h3>Заказ и доставка запасных частей</h3>
+                                        <p>Поставка качественных запасных частей для лифтов по всей России от ведущих мировых и российских производителей.
+                                        </p>
+                                    </div>
+                                    <div class="service-card-block">
+                                        <a target="_blank" href="./img/services/10.jpg">
+                                            <img src="./img/services/10.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-card">
+                                    <div class="service-card-block">
+                                        <h3>Изготовление противопожарных дверей шахт, кабин, люков для машинных отделений, ограждений</h3>
+                                        <p>Собственное производство противопожарных и металлоизделий на высокотехнологичном оборудовании, с использованием качественных материалов.</p>
+                                    </div>
+                                    <div class="service-card-block">
+                                        <div id="carouselService3" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <a target="_blank" href="./img/services/8.jpg">
+                                                        <img class="d-block" src="./img/services/8.jpg" alt="" height="300">
+                                                    </a>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <a target="_blank" href="./img/services/9.jpg">
+                                                        <img class="d-block" src="./img/services/9.jpg" height="300">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselService3" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselService3"
-                        data-bs-slide="next">
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselService3" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="service-card-block">
-                    <h3>Заказ и продажа инвалидных подъемников к подъездам.</h3>
-                    <p>Реализация продукции для МГН и инвалидов.</p>
-                  </div>
-                  <div class="service-card-block">
-                    <a target="_blank" href="./img/services/7.jpg">
-                      <img src="./img/services/7.png" alt="">
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="service-card-block">
-                    <h3>Доставка</h3>
-                    <p>Перевозка продукции до объекта установки. Осуществляется по всей территории РФ.</p>
-                  </div>
-                  <div class="service-card-block">
-                    <a target="_blank" href="./img/services/5.jpg">
-                      <img src="./img/services/5.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="service-card-block">
-                    <h3>Принимаем заказы на изделия по облагораживанию дворовых объектов</h3>
-                    <!-- <p>Перевозка продукции до объекта установки. Осуществляется по всей территории РФ.</p> -->
-                  </div>
-                  <div class="service-card-block">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-card">
+                                    <div class="service-card-block">
+                                        <h3>Заказ и продажа инвалидных подъемников к подъездам.</h3>
+                                        <p>Реализация продукции для МГН и инвалидов.</p>
+                                    </div>
+                                    <div class="service-card-block">
+                                        <a target="_blank" href="./img/services/7.jpg">
+                                            <img src="./img/services/7.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-card">
+                                    <div class="service-card-block">
+                                        <h3>Доставка</h3>
+                                        <p>Перевозка продукции до объекта установки. Осуществляется по всей территории РФ.</p>
+                                    </div>
+                                    <div class="service-card-block">
+                                        <a target="_blank" href="./img/services/5.jpg">
+                                            <img src="./img/services/5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-card">
+                                    <div class="service-card-block">
+                                        <h3>Принимаем заказы на изделия по облагораживанию дворовых объектов</h3>
+                                        <!-- <p>Перевозка продукции до объекта установки. Осуществляется по всей территории РФ.</p> -->
+                                    </div>
+                                    <!-- <div class="service-card-block">
                     <a target="_blank" href="./img/services/objects.jpg">
                       <img src="./img/services/objects.jpg" alt="">
                     </a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- О компании -->
-
-    <section class="site-section about-company background-light" id="about-company">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-md-7 col-sm-12">
-            <div class="section-heading">
-              <h2 class="mb-3">О компании</h2>
-              <p>«Тюменский лифтовой завод» основан в 2010 году. Накопив огромный опыт установки лифтов разных
-                производителей и превратив его в конкретные инженерные решения, «Тюменский лифтовой завод» совместно с
-                ОАО «Могилёвлифтмаш» приступили к выпуску собственного лифтового оборудования, используя последние
-                инновации в данной сфере. Основное направление производства - современные пассажирские лифты категорий
-                «эконом», предназначенные для застройки жилых массивов, для замены и модернизации устаревших лифтов,
-                отработавших нормативный срок эксплуатации.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <a href="img/sertificate.jpg">
-              <img src="img/sertificate.jpg" height="350" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section efficiency">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <div class="section-heading text-center">
-              <h2>Немного статистики</h2>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-12 col-sm-12">
-            <ul class="efficiency__list text-center list-unstyled mb-0">
-              <li class="efficiency__card">
-                <div class="card-header">
-                  <img src="img/on-market.svg" width="80" alt="">
-                  <span>13 лет</span>
-                </div>
-                <p>На рынке</p>
-              </li>
-              <li class="efficiency__card">
-                <div class="card-header">
-                  <img src="img/object.svg" width="80" alt="">
-                  <span>800+</span>
-                </div>
-                <p>Объектов</p>
-              </li>
-              <li class="efficiency__card">
-                <div class="card-header">
-                  <img src="img/clients.svg" width="80" alt="">
-                  <span>80+</span>
-                </div>
-                <p>Клиентов</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section objects background-light" id="objects">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="service-card-block">
-            <div class="section-heading text-center">
-              <h2>Объекты</h2>
-              <p></p>
-            </div>
-            <div class="row justify-content-center intro__clients">
-              <div class="service-card-block-carousel">
-                <div id="carouselExampleControls" class="carousel slide desktop" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <ul class="text-center list-unstyled mb-0">
-                        <li>
-                          <img src="img/objects/object-1.jpg" width="150" height="300" class="img-fluid m-auto"
-                            alt="image">
-                        </li>
-                        <li>
-                          <img src="img/objects/object-3.jpg" width="150" height="300" class="img-fluid m-auto"
-                            alt="image">
-                        </li>
-                        <li>
-                          <img src="img/objects/object-3.jpg" width="150" height="300" class="img-fluid m-auto"
-                            alt="image">
-                        </li>
-                        <li>
-                          <img src="img/objects/object-4.jpg" width="150" height="300" class="img-fluid m-auto"
-                            alt="image">
-                        </li>
-                      </ul>
+                  </div> -->
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="carousel-item">
-                      <ul class="intro__customer-logos text-center list-unstyled mb-0">
-                        <li>
-                          <img src="img/objects/object-5.jpg" width="150" height="300" class="img-fluid m-auto"
-                            alt="image">
-                        </li>
-                        <li>
-                          <img src="img/objects/object-6.jpg" width="150" height="300" class="img-fluid m-auto"
-                            alt="image">
-                        </li>
-                        <li>
-                          <img src="img/objects/object-7.jpg" width="150" height="300" class="img-fluid m-auto"
-                            alt="image">
-                        </li>
-                        <li>
-                          <img src="img/objects/object-8.jpg" width="150" height="300" class="img-fluid m-auto"
-                            alt="image">
-                        </li>
-                      </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- О компании -->
+
+        <section class="site-section about-company background-light" id="about-company">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-7 col-sm-12">
+                        <div class="section-heading">
+                            <h2 class="mb-3">О компании</h2>
+                            <p>«Тюменский лифтовой завод» основан в 2010 году. Накопив огромный опыт установки лифтов разных производителей и превратив его в конкретные инженерные решения, «Тюменский лифтовой завод» совместно с ОАО «Могилёвлифтмаш» приступили
+                                к выпуску собственного лифтового оборудования, используя последние инновации в данной сфере. Основное направление производства - современные пассажирские лифты категорий «эконом», предназначенные для застройки жилых массивов,
+                                для замены и модернизации устаревших лифтов, отработавших нормативный срок эксплуатации.</p>
+                        </div>
                     </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
+                    <div class="col-md-4 col-sm-12">
+                        <a href="img/sertificate.pdf">
+                            <img src="img/sertificate.jpg" height="350" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section efficiency">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="section-heading text-center">
+                            <h2>Немного статистики</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-sm-12">
+                        <ul class="efficiency__list text-center list-unstyled mb-0">
+                            <li class="efficiency__card">
+                                <div class="card-header">
+                                    <img src="img/on-market.svg" width="80" alt="">
+                                    <span>13 лет</span>
+                                </div>
+                                <p>На рынке</p>
+                            </li>
+                            <li class="efficiency__card">
+                                <div class="card-header">
+                                    <img src="img/object.svg" width="80" alt="">
+                                    <span>800+</span>
+                                </div>
+                                <p>Объектов</p>
+                            </li>
+                            <li class="efficiency__card">
+                                <div class="card-header">
+                                    <img src="img/clients.svg" width="80" alt="">
+                                    <span>80+</span>
+                                </div>
+                                <p>Клиентов</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section objects background-light" id="objects">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="service-card-block">
+                        <div class="section-heading text-center">
+                            <h2>Объекты</h2>
+                            <p></p>
+                        </div>
+                        <div class="row justify-content-center intro__clients">
+                            <div class="service-card-block-carousel">
+                                <div id="carouselExampleControls" class="carousel slide desktop" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <ul class="text-center list-unstyled mb-0">
+                                                <li>
+                                                    <img src="img/objects/object-1.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                                </li>
+                                                <li>
+                                                    <img src="img/objects/object-3.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                                </li>
+                                                <li>
+                                                    <img src="img/objects/object-3.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                                </li>
+                                                <li>
+                                                    <img src="img/objects/object-4.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <ul class="intro__customer-logos text-center list-unstyled mb-0">
+                                                <li>
+                                                    <img src="img/objects/object-5.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                                </li>
+                                                <li>
+                                                    <img src="img/objects/object-6.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                                </li>
+                                                <li>
+                                                    <img src="img/objects/object-7.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                                </li>
+                                                <li>
+                                                    <img src="img/objects/object-8.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
-                </div>
-                <div id="carouselExampleControlsMobile" class="carousel slide mobile" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="img/objects/object-1.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/objects/object-3.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/objects/object-3.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/objects/object-4.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/objects/object-5.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/objects/object-6.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/objects/object-7.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/objects/object-8.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsMobile"
-                    data-bs-slide="prev">
+                                </div>
+                                <div id="carouselExampleControlsMobile" class="carousel slide mobile" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/objects/object-1.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/objects/object-3.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/objects/object-3.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/objects/object-4.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/objects/object-5.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/objects/object-6.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/objects/object-7.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/objects/object-8.jpg" width="150" height="300" class="img-fluid m-auto" alt="image">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsMobile" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsMobile"
-                    data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsMobile" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Обратная связь (Форма) -->
+        <!-- Обратная связь (Форма) -->
 
-    <section class="site-section feedback" id="feedback">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-lg-6 col-md-12 col-sm-12" id="contacts">
-            <div class="section-heading">
-              <h2>Свяжитесь с нами</h2>
-              <p><br> ООО «Тюменский лифтовой завод»
-                635031, РФ, г. Тюмень, ул. Дружбы, 113</p>
-            </div>
-            <div class="feedback__contacts">
-              <h3>Контактные данные</h3>
-              <ul class="feedback__list list-unstyled mb-0">
-                <li class="feedback__item feedback__item--email">
-                  <span></span>
-                  <h4>Наш Email</h4>
-                  <a href="mailto:support@arpicon.ru">zavod@tlzavod.ru</a>
-                </li>
-                <li class="feedback__item feedback__item--phone">
-                  <span></span>
-                  <h4>Наш телефон</h4>
-                  <a href="tel:+73452290266">+7 3452 290-266</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-12 col-sm-12">
-            <form id="form-with-message" class="form" method="post">
-              <div class="form__field">
-                <label class="form__title form__title--fio" for="name1">ФИО</label>
-                <input type="text" name="name1" id="name1" required>
-              </div>
-              <div class="form__field">
-                <label class="form__title form__title--email" for="email1">Email</label>
-                <input type="email" name="email1" id="email1" required>
-              </div>
-              <div class="form__field">
-                <label class="form__title form__title--phone" for="phone1">Телефон</label>
-                <input type="tel" name="phone1" id="phone1">
-              </div>
-              <div class="form-group form__field form__field--message">
-                <label class="form__title" for="message1">Сообщение</label>
-                <textarea class="form-control" name="message1" id="message1" rows="3"></textarea>
-              </div>
-              <!-- <div class="form__field">
+        <section class="site-section feedback" id="feedback">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6 col-md-12 col-sm-12" id="contacts">
+                        <div class="section-heading">
+                            <h2>Свяжитесь с нами</h2>
+                            <p><br> ООО «Тюменский лифтовой завод» 635031, РФ, г. Тюмень, ул. Дружбы, 113</p>
+                        </div>
+                        <div class="feedback__contacts">
+                            <h3>Контактные данные</h3>
+                            <ul class="feedback__list list-unstyled mb-0">
+                                <li class="feedback__item feedback__item--email">
+                                    <span></span>
+                                    <h4>Наш Email</h4>
+                                    <a href="mailto:support@arpicon.ru">zavod@tlzavod.ru</a>
+                                </li>
+                                <li class="feedback__item feedback__item--phone">
+                                    <span></span>
+                                    <h4>Наш телефон</h4>
+                                    <a href="tel:+73452290266">+7 3452 290-266</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <form id="form-with-message" class="form" method="post">
+                            <div class="form__field">
+                                <label class="form__title form__title--fio" for="name1">ФИО</label>
+                                <input type="text" name="name1" id="name1" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__title form__title--email" for="email1">Email</label>
+                                <input type="email" name="email1" id="email1" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__title form__title--phone" for="phone1">Телефон</label>
+                                <input type="tel" name="phone1" id="phone1">
+                            </div>
+                            <div class="form-group form__field form__field--message">
+                                <label class="form__title" for="message1">Сообщение</label>
+                                <textarea class="form-control" name="message1" id="message1" rows="3"></textarea>
+                            </div>
+                            <!-- <div class="form__field">
                 <label class="form__title form__title--message" for="message1">Сообщение</label>
                 <textarea name="message1" id="message1" cols="30" rows="10"></textarea>
               </div> -->
-              <button type="submit">Отправить сообщение</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+                            <button type="submit">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="map" id="map" style="height: 480px;"></div>
-  </main>
+        <div class="map" id="map" style="height: 480px;"></div>
+    </main>
 
-  <footer class="main-footer">
-    <div class="main-footer__social">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-12 main-footer__copyrights">
-            <p>Copyright © 2010 — 2023, ООО «Тюменский лифтовой завод»</p>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 main-footer__social-section">
-            <div class="row align-items-center">
-              <div class="service-card-block">
-                <ul class="list-unstyled mb-lg-0 justify-content-center">
-                  <li>
-                    <a href="#intro">
-                      <span>Заказать звонок</span>
-                      <img src="img/social/mail.svg" width="24" alt="">
-                    </a>
-                  </li>
-                  <!-- <li>
+    <footer class="main-footer">
+        <div class="main-footer__social">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 main-footer__copyrights">
+                        <p>Copyright © 2010 — 2023, ООО «Тюменский лифтовой завод»</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 main-footer__social-section">
+                        <div class="row align-items-center">
+                            <div class="service-card-block">
+                                <ul class="list-unstyled mb-lg-0 justify-content-center">
+                                    <li>
+                                        <a href="#intro">
+                                            <span>Заказать звонок</span>
+                                            <img src="img/social/mail.svg" width="24" alt="">
+                                        </a>
+                                    </li>
+                                    <!-- <li>
                     <a href="#">
                       <img src="img/social/telegram.svg" width="35" alt="">
                     </a>
@@ -555,33 +529,33 @@
                       <img src="img/social/youtube.svg" width="35" alt="">
                     </a>
                   </li> -->
-                </ul>
-              </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <div class="tlz-modal tlz-modal--closed">
-    <div class="tlz-modal__text">
-      <p>Письмо отправлено</p>
-      <img src="img/form-icons/ok.svg" alt="">
+    <div class="tlz-modal tlz-modal--closed">
+        <div class="tlz-modal__text">
+            <p>Письмо отправлено</p>
+            <img src="img/form-icons/ok.svg" alt="">
+        </div>
     </div>
-  </div>
 
-  <div class="tlz-modal-error tlz-modal--closed">
-    <div class="tlz-modal__text">
-      <p>Письмо не отправлено</p>
-      <img src="img/form-icons/not-ok.svg" alt="">
+    <div class="tlz-modal-error tlz-modal--closed">
+        <div class="tlz-modal__text">
+            <p>Письмо не отправлено</p>
+            <img src="img/form-icons/not-ok.svg" alt="">
+        </div>
     </div>
-  </div>
 
-  <script src="js/leaflet.js"></script>
-  <script src="https://unpkg.com/imask"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
