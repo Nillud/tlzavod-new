@@ -489,10 +489,14 @@ input {
     margin-bottom: 3px;
   }
 }
+.service .service-card-section {
+  padding: 20px;
+  border: 1px solid #0b163f;
+  border-radius: 10px;
+}
 .service ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px 40px;
+  grid-template-columns: 1fr;
 }
 @media (max-width: 1360px) {
   .service ul {
@@ -501,10 +505,23 @@ input {
 }
 .service ul li {
   display: flex;
-  padding: 20px;
-  border: 1px solid #0b163f;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  padding: 0 20px 0 30px;
+  position: relative;
+}
+.service ul li::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 8px;
+  top: 8px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.service ul li:not(:last-child) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d5d7da;
+  margin-bottom: 10px;
 }
 @media (max-width: 767px) {
   .service ul li {
@@ -520,10 +537,12 @@ input {
 }
 .service ul li h3,
 .service ul li p {
-  text-align: center;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
 }
 .service ul li h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 @media (max-width: 767px) {
@@ -531,42 +550,14 @@ input {
     font-size: 18px;
   }
 }
+.service ul li p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
 @media (max-width: 767px) {
   .service ul li p {
     font-size: 14px;
     margin-bottom: 0;
-  }
-}
-.service ul li .service-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-.service ul li .service-card .service-card-block {
-  margin-bottom: 20px;
-}
-.service ul li .service-card .service-card-block img {
-  display: block;
-  max-height: 300px;
-  margin: 0 auto;
-}
-.service ul li .service-card .service-card-block .carousel {
-  width: 400px;
-}
-@media (max-width: 767px) {
-  .service ul li .service-card .service-card-block .carousel {
-    width: 200px;
-  }
-}
-.service ul li .service-card .service-card-block .carousel img {
-  max-height: 300px;
-  margin: 0 auto;
-}
-@media (max-width: 767px) {
-  .service ul li .service-card .service-card-block .carousel img {
-    max-height: 200px;
   }
 }
 .stages img {
@@ -860,6 +851,19 @@ input {
 }
 .form__title--phone::before {
   background-image: url("../img/form-icons/phone-black.svg");
+}
+.elevator-create__table th {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+.elevator-create__table td:nth-child(2) {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.elevator-example__slider img {
+  margin: 0 auto;
 }
 .about-company a img {
   float: right;
