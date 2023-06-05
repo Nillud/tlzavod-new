@@ -111,6 +111,17 @@ input {
     display: none;
   }
 }
+.main-header .mobile {
+  display: none;
+}
+@media (max-width: 1360px) {
+  .main-header .desktop {
+    display: none;
+  }
+  .main-header .mobile {
+    display: block;
+  }
+}
 .site-section {
   padding: 120px 0;
 }
@@ -489,10 +500,19 @@ input {
     margin-bottom: 3px;
   }
 }
+.service {
+  margin: 0 10px;
+}
 .service .service-card-section {
   padding: 20px;
   border: 1px solid #0b163f;
   border-radius: 10px;
+}
+@media (max-width: 1360px) {
+  .service .service-card-section {
+    padding: 0;
+    margin: 0 20px;
+  }
 }
 .service ul {
   display: grid;
@@ -528,6 +548,9 @@ input {
     padding: 10px;
     margin-bottom: 0;
   }
+  .service ul li::before {
+    display: none;
+  }
   .service ul li .carousel-control-prev {
     left: -40px;
   }
@@ -547,7 +570,7 @@ input {
 }
 @media (max-width: 767px) {
   .service ul li h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .service ul li p {
@@ -862,8 +885,64 @@ input {
   text-transform: uppercase;
   font-weight: bold;
 }
+.elevator-create .carousel-control-prev {
+  left: -30px;
+}
+.elevator-create .carousel-control-next {
+  right: -30px;
+}
+@media (max-width: 1360px) {
+  .elevator-create .carousel .carousel-control-prev,
+  .elevator-create .carousel .carousel-control-next {
+    margin-top: -210px;
+  }
+  .elevator-create .carousel .carousel-control-prev {
+    left: 0;
+  }
+  .elevator-create .carousel .carousel-control-next {
+    right: 0;
+  }
+  .elevator-create img {
+    height: 400px;
+    margin: 0 auto;
+  }
+  .elevator-create__table {
+    height: 531px;
+  }
+  .elevator-create__table th {
+    font-size: 16px;
+  }
+  .elevator-create__table td {
+    font-size: 13px;
+  }
+}
 .elevator-example__slider img {
   margin: 0 auto;
+}
+.elevator-example .carousel-control-prev {
+  left: 0;
+}
+.elevator-example .carousel-control-next {
+  right: 0;
+}
+@media (max-width: 1023px) {
+  .elevator-example h2 {
+    margin-bottom: 20px !important;
+  }
+  .elevator-example__description ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .elevator-example__description ul p {
+    font-size: 12px;
+  }
+  .elevator-example .carousel .carousel-control-prev,
+  .elevator-example .carousel .carousel-control-next {
+    height: 30%;
+    margin: auto 0;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 .about-company a img {
   float: right;
