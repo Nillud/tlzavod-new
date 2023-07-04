@@ -949,6 +949,13 @@ input {
   .elevator-example__description ul p {
     font-size: 12px;
   }
+  .elevator-example__description .sub-list {
+    list-style-type: disc;
+    padding-left: 32px;
+  }
+  .elevator-example__description .sub-list li {
+    font-size: 12px;
+  }
   .elevator-example .carousel .carousel-control-prev,
   .elevator-example .carousel .carousel-control-next {
     height: 30%;
