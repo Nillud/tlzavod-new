@@ -925,6 +925,18 @@ input {
 .elevator-example .carousel-control-next {
   right: 0;
 }
+.elevator-example__description p {
+  margin-bottom: 0;
+}
+.elevator-example__description .characteristic {
+  font-weight: bold;
+}
+.elevator-example__description li {
+  margin-bottom: 10px;
+}
+.elevator-example__description .sub-list li {
+  margin-bottom: 5px;
+}
 @media (max-width: 1023px) {
   .elevator-example h2 {
     margin-bottom: 20px !important;
@@ -945,7 +957,6 @@ input {
   }
 }
 .about-company a img {
-  float: right;
   transition: all 0.6s ease-in-out;
 }
 @media (max-width: 767px) {
@@ -994,6 +1005,22 @@ input {
     width: 200px;
     height: 200px;
   }
+  .objects .service-card-block-carousel .mobile .before-after {
+    position: relative;
+  }
+  .objects .service-card-block-carousel .mobile .before-after span {
+    width: 70%;
+    text-align: center;
+    padding: 4px 0;
+    background-color: rgba(248, 249, 250, 0.6);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-left: 48px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #2e2e2e;
+  }
 }
 .objects ul {
   display: grid;
@@ -1004,6 +1031,21 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.objects ul li .before-after {
+  position: relative;
+}
+.objects ul li .before-after span {
+  width: 100%;
+  padding: 4px 0;
+  background-color: rgba(248, 249, 250, 0.6);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 18px;
+  color: #2e2e2e;
 }
 .objects ul img {
   width: 300px;
