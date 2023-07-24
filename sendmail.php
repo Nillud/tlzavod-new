@@ -6,10 +6,10 @@ function sendMail($body)
   $MAIL_MAILER = 'smtp';
   $MAIL_HOST = 'smtp.mail.ru';
   $MAIL_PORT = '465';
-  $MAIL_USERNAME = 'agadullin.linar@mail.ru';
-  $MAIL_PASSWORD = '8rm2KMgWbHw2XJwbv38K';
+  $MAIL_USERNAME = 'example@mail.ru'; // указать контрольную почту (вас)
+  $MAIL_PASSWORD = 'qweqweqweqwewq'; // сгенерированный пароль для стороннего приложения
   $MAIL_ENCRYPTION = 'ssl';
-  $MAIL_FROM_ADDRESS = 'agadullin.linar@mail.ru';
+  $MAIL_FROM_ADDRESS = 'example@mail.ru'; // указать отправителя (вас)
   $MAIL_FROM_NAME = 'Tlzavod';
 
   $mail = new PHPMailer;
@@ -32,7 +32,7 @@ function sendMail($body)
   $mail->setFrom($MAIL_FROM_ADDRESS, $MAIL_FROM_NAME);
 
   // Кому
-  $mail->addAddress('agadullin.linar@mail.ru');
+  $mail->addAddress('example@mail.ru'); // ваш адрес почты
 
   // Тема письма
   $mail->Subject = $subject;
